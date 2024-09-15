@@ -1,0 +1,22 @@
+.hexrow {
+    white-space: nowrap;
+    margin: 0 25px 3px;
+}
+
+.hexrow > div {
+    width: 100px;
+    height: 173.2px;
+    margin: 0 25px;
+    position: relative;
+    background-color: black;
+    border: 1px solid blue;
+
+}
+
+.hexrow > div:nth-child(odd) {
+    top: 43.3px; /* ( width x cos(30) / 2 ) */
+}
+
+.hexrow > div:nth-child(even) {
+    top: -44.8px; /* -1 x( ( width x cos(30) / 2) + (hexrow bottom margin / 2)) */
+}
